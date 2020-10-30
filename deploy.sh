@@ -1,14 +1,29 @@
 #!/usr/bin/env sh
 
-# 确保脚本抛出遇到的错误
+git add .
+git commit 'deploy'
+git push
+
+# abort on errors
 set -e
 
-# 生成静态文件
+# build
 npm run docs:build
 
-# 如果是发布到自定义域名
-# echo 'www.example.com' > CNAME
+# navigate into the build output directory
+cd docs/.vuepress/dist
 
+# if you are deploying to a custom domain
+ echo 'blog.dotohi.com' > CNAME
+
+git init
 git add -A
 git commit -m 'deploy'
-git push -u origin main
+
+# if you are deploying to https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+
+# if you are deploying to https://<USERNAME>.github.io/<REPO>
+git push -f git@github.com:loveagri/blog.git master:gh-pages
+
+cd -
