@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 git add .
-git commit 'deploy'
+git commit -m 'deploy'
 git push
 
 # abort on errors

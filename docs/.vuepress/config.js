@@ -23,7 +23,7 @@ module.exports = {
                 text: "分类", // 默认 “分类”
             },
             tag: {
-                location: 3, // 在导航栏菜单中所占的位置，默认3
+                location: 9, // 在导航栏菜单中所占的位置，默认3
                 text: "标签", // 默认 “标签”
             },
         },
@@ -91,14 +91,14 @@ module.exports = {
             },
         ],
         sidebar: "auto", //在所有页面中启用自动生成侧栏
-        record: "蜀ICP备20005033号-1",
+        record: "冀ICP备19024518号-1",
         recordLink: "https://icp.chinaz.com/home/info?host=tsanfer.xyz",
-        cyberSecurityRecord: "川公网安备 51110202000301号",
-        cyberSecurityLink:
-            "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51110202000301",
+        // cyberSecurityRecord: "川公网安备 51110202000301号",
+        // cyberSecurityLink:
+        //     "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51110202000301",
         startYear: "2020", // 项目开始时间，只填写年份
         lastUpdated: "最后更新时间", // string | boolean
-        author: "Tsanfer",
+        author: "地农",
         authorAvatar: "/avatar.svg", //作者头像
         mode: "light", //默认显示白天模式
         codeTheme: "okaidia", // default 'tomorrow'
