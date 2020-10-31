@@ -1,4 +1,5 @@
 node_modules/
+.nyc_output/
 gb-pages/
 contents/.vuepress/dist/
 docs/
