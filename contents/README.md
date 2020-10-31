@@ -1,6 +1,6 @@
 ---
 home: true
-bgImage: "/background.jpg"
+bgImage: "https://i.niupic.com/images/2020/10/31/8WdP.jpg"
 bgImageStyle: { height: "350px" }
 ---
 
