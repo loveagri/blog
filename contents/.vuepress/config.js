@@ -2,7 +2,7 @@ module.exports = {
     // host: '0.0.0.0',  // 生成网页地址（本地调试使用）
     // port: "22335", // 生成网页端口（本地调试使用）
     dest: './docs',
-    title: "Loveagri", // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
+    title: "Loveagris", // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
     description: "现居住于猎户臂上的一个碳基生命", // meta 中的描述文字，用于SEO
     head: [
         ["link", {rel: "icon", href: "/favicon.svg"}], //浏览器的标签栏的网页图标,基地址/contents/.vuepress/public
