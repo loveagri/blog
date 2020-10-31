@@ -2,8 +2,8 @@ module.exports = {
     // host: '0.0.0.0',  // 生成网页地址（本地调试使用）
     // port: "22335", // 生成网页端口（本地调试使用）
     dest: './docs',
-    title: "Loveagris", // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
-    description: "现居住于猎户臂上的一个碳基生命", // meta 中的描述文字，用于SEO
+    title: "Loveagri", // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
+    description: "保持热爱", // meta 中的描述文字，用于SEO
     head: [
         ["link", {rel: "icon", href: "/favicon.svg"}], //浏览器的标签栏的网页图标,基地址/contents/.vuepress/public
         [
@@ -59,46 +59,6 @@ module.exports = {
             {
                 audios: [
                     {
-                        name: "Faster Than Light",
-                        artist: "Andreas Waldetoft / Mia Stegmar",
-                        url:
-                            "https://cdn-image.tsanfer.xyz/music/Andreas%20Waldetoft%2CMia%20Stegmar%20-%20Faster%20Than%20Light.mp3",
-                        cover:
-                            "https://p1.music.126.net/Gxv6d9W4Yd9q9WNHPpi8rw==/1379887104073348.jpg",
-                    },
-                    {
-                        name: "Dawn",
-                        artist: "DDRKirby(ISQ)",
-                        url:
-                            "https://cdn-image.tsanfer.xyz/music/Dawn%20-%20DDRKirby%28ISQ%29.mp3",
-                        cover:
-                            "https://p2.music.126.net/IPnqMCk8YaN9inwYV2bdgQ==/18774161044446693.jpg",
-                    },
-                    {
-                        name: "TRON Legacy (End Titles)",
-                        artist: "Daft Punk",
-                        url:
-                            "https://cdn-image.tsanfer.xyz/music/Daft%20Punk%20-%20TRON%20Legacy%20%28End%20Titles%29.mp3",
-                        cover:
-                            "https://p2.music.126.net/qOOTIykbSLw9RHB0vI83GA==/737772302281958.jpg",
-                    },
-                    {
-                        name: "Reconfig",
-                        artist: "Shortwire",
-                        url:
-                            "https://cdn-image.tsanfer.xyz/music/Reconfig%20-%20Shortwire.mp3",
-                        cover:
-                            "https://p2.music.126.net/2oouVh_rHOv1nZXYapF41A==/109951163606358209.jpg",
-                    },
-                    {
-                        name: "Broken Boy",
-                        artist: "Tonspender",
-                        url:
-                            "https://cdn-image.tsanfer.xyz/music/Tonspender%20-%20Broken%20Boy.flac",
-                        cover:
-                            "https://p2.music.126.net/4TnTRyHqa3-D2H1UnOa00w==/109951163666994621.jpg",
-                    },
-                    {
                         name: "Forever",
                         artist: "PIKASONIC",
                         url: "https://cdn-image.tsanfer.xyz/music/forever%20mst.mp3",
@@ -130,6 +90,7 @@ module.exports = {
                             "https://p2.music.126.net/VjN74c1hoYgPCEZ9DngeQw==/109951163772624643.jpg",
                     },
                 ],
+                autoShrink:true
             },
         ],
         [
