@@ -111,8 +111,8 @@ sudo yarn install
 
 {
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "vuepress dev contents",
+    "docs:build": "vuepress build contents"
   },
   "dependencies": {
     "vuepress": "^1.5.2",
@@ -176,7 +176,7 @@ sudo yarn
 :::
 
 ```javascript
-// docs/.vuepress/config.js
+// contents/.vuepress/config.js
 
 module.exports = {
   // host: '0.0.0.0',  // 生成网页地址（本地调试使用）
@@ -184,7 +184,7 @@ module.exports = {
   title: "Tsanfer's Blog", // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
   description: "现居住于猎户臂上的一个碳基生命", // meta 中的描述文字，用于SEO
   head: [
-    ["link", { rel: "icon", href: "/favicon.svg" }], //浏览器的标签栏的网页图标,基地址/docs/.vuepress/public
+    ["link", { rel: "icon", href: "/favicon.svg" }], //浏览器的标签栏的网页图标,基地址/contents/.vuepress/public
     [
       "meta",
       {

@@ -1,11 +1,11 @@
 module.exports = {
     // host: '0.0.0.0',  // 生成网页地址（本地调试使用）
     // port: "22335", // 生成网页端口（本地调试使用）
-    dest: "./dist",
+    dest: './docs',
     title: "Loveagri", // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
     description: "现居住于猎户臂上的一个碳基生命", // meta 中的描述文字，用于SEO
     head: [
-        ["link", {rel: "icon", href: "/favicon.svg"}], //浏览器的标签栏的网页图标,基地址/docs/.vuepress/public
+        ["link", {rel: "icon", href: "/favicon.svg"}], //浏览器的标签栏的网页图标,基地址/contents/.vuepress/public
         [
             "meta",
             {
@@ -28,69 +28,7 @@ module.exports = {
                 text: "标签", // 默认 “标签”
             },
         },
-        nav: [
-            //导航栏设置
-            {text: "主页", link: "/", icon: "reco-home"},
-            {text: "时间线", link: "/timeline/", icon: "reco-date"},
-            {text: "订阅", link: "https://tsanfer.xyz/rss.xml", icon: "reco-rss"},
-            {
-                text: "工具",
-                icon: "reco-api",
-                items: [
-                    {
-                        text: "个人网盘",
-                        link: "http://clouddisk.tsanfer.xyz:8081",
-                        icon: "reco-account",
-                    },
-                    {
-                        text: "第三方网易云播放器",
-                        link: "http://clouddisk.tsanfer.xyz/YesPlayMusic/",
-                        icon: "reco-menu",
-                    },
-                    {
-                        text: "订阅转换器",
-                        link: "https://tsanfer.xyz/sub-web/",
-                        icon: "reco-menu",
-                    },
-                ],
-            },
-            {
-                text: "联系",
-                icon: "reco-message",
-                items: [
-                    {
-                        text: "GitHub",
-                        link: "https://github.com/Tsanfer",
-                        icon: "reco-github",
-                    },
-                    {
-                        text: "CSDN",
-                        link: "https://blog.csdn.net/qq_27961843/",
-                        icon: "reco-csdn",
-                    },
-                    {
-                        text: "BiliBili",
-                        link: "https://space.bilibili.com/12167681",
-                        icon: "reco-bilibili",
-                    },
-                    {
-                        text: "QQ",
-                        link: "tencent://message/?uin=1124851454",
-                        icon: "reco-qq",
-                    },
-                    {
-                        text: "Twitter",
-                        link: "https://twitter.com/a1124851454",
-                        icon: "reco-twitter",
-                    },
-                    {
-                        text: "Gmail",
-                        link: "mailto:a1124851454@gmail.com",
-                        icon: "reco-mail",
-                    },
-                ],
-            },
-        ],
+        nav: require('./nav'),
         sidebar: "auto", //在所有页面中启用自动生成侧栏
         record: "冀ICP备19024518号-1",
         recordLink: "https://icp.chinaz.com/home/info?host=tsanfer.xyz",

@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "docs:dev": "vuepress dev contents",
+    "docs:build": "vuepress build contents",
     "coverage": "nyc --reporter=lcov --reporter=text-summary npm run docs:build"
   },
   "dependencies": {

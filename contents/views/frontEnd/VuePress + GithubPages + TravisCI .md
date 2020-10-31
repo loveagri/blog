@@ -309,8 +309,8 @@ vuepress build .
     "vuepress": "^1.3.1"
   },
   "scripts": {
-    "docs:build": "vuepress build docs",
-    "docs:dev": "vuepress dev docs"
+    "docs:build": "vuepress build contents",
+    "docs:dev": "vuepress dev contents"
   }
 }
 ```
@@ -364,7 +364,7 @@ module.exports = {
   head: [
     [
       "link",
-      { rel: "icon", href: "/gamepad_game_128px.ico" }, //浏览器的标签栏的网页图标,基地址/docs/.vuepress/public
+      { rel: "icon", href: "/gamepad_game_128px.ico" }, //浏览器的标签栏的网页图标,基地址/contents/.vuepress/public
     ],
   ],
 };
@@ -392,7 +392,7 @@ module.exports = {
 module.exports = {
   themeConfig: {
     nav: [
-      //链接页面链接的根地址为/docs
+      //链接页面链接的根地址为/contents
       { text: "思路", link: "/pages/flow.md" },
       { text: "创建Github仓库", link: "/pages/Github.md" },
       { text: "配置VuePress", link: "/pages/VuePress.md" },
@@ -435,7 +435,7 @@ module.exports = {
     repoLabel: "Github",
     // 以下为可选的编辑链接选项
     // 假如文档不是放在仓库的根目录下：
-    docsDir: "docs/pages",
+    docsDir: "contents/pages",
     // 假如文档放在一个特定的分支下：
     docsBranch: "master",
     // 默认是 false, 设置为 true 来启用
@@ -490,7 +490,7 @@ module.exports = {
   head: [
     [
       "link",
-      { rel: "icon", href: "/gamepad_game_128px.ico" }, //浏览器的标签栏的网页图标,基地址/docs/.vuepress/public
+      { rel: "icon", href: "/gamepad_game_128px.ico" }, //浏览器的标签栏的网页图标,基地址/contents/.vuepress/public
     ],
   ],
 
@@ -503,7 +503,7 @@ module.exports = {
   themeConfig: {
     //导航栏
     nav: [
-      //链接页面链接的根地址为/docs
+      //链接页面链接的根地址为/contents
       { text: "思路", link: "/pages/flow.md" },
       { text: "创建Github仓库", link: "/pages/Github.md" },
       { text: "配置VuePress", link: "/pages/VuePress.md" },
@@ -526,7 +526,7 @@ module.exports = {
     repoLabel: "Github",
     // 以下为可选的编辑链接选项
     // 假如文档不是放在仓库的根目录下：
-    docsDir: "docs",
+    docsDir: "contents",
     // 假如文档放在一个特定的分支下：
     docsBranch: "master",
     // 默认是 false, 设置为 true 来启用
@@ -642,11 +642,11 @@ node_js:
 install:
   - yarn install # npm ci
 script:
-  - yarn docs:build # npm run docs:build
+  - yarn contents:build # npm run contents:build
 deploy:
   provider: pages
   skip_cleanup: true
-  local_dir: docs/.vuepress/dist
+  local_dir: contents/.vuepress/dist
   github_token: $GITHUB_TOKEN # 在 GitHub 中生成，用于允许 Travis 向你的仓库推送代码。在 Travis 的项目设置页面进行配置，设置为 secure variable
   keep_history: true
   on:
