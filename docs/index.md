@@ -78,8 +78,8 @@ features: # 可选的
 
 ## :email: 联系
 
-- **WeChat or QQ**: <a href="tencent://message/?uin=894072666&Site=&Menu=yesUrl" class='qq'>894072666</a>
-- **Email**: <a href="mailto:894072666@qq.com">894072666@qq.com</a>
+- **WeChat or QQ**: <a href="tencent://message/?uin=1044531744&Site=&Menu=yesUrl" class='qq'>1044531744</a>
+- **Email**: <a href="mailto:1044531744@qq.com">1044531744@qq.com</a>
 - **GitHub**: <https://github.com/loveagri>
 
 </br>  -->

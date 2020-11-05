@@ -55,7 +55,7 @@ module.exports = { // 主题配置
             {
                 iconClass: 'icon-youjian',
                 title: '发邮件',
-                link: 'mailto:894072666@qq.com'
+                link: 'mailto:1044531744@qq.com'
             },
             {
                 iconClass: 'icon-github',
