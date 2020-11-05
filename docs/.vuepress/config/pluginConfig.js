@@ -65,15 +65,15 @@ module.exports = [ // 插件
     ],
     [
         'vuepress-plugin-comment', // 评论
-        // {
-        //   choosen: 'valine',
-        //   options: {
-        //     el: '#valine-vuepress-comment',
-        //     appId: 'qnS1jobNF7CROIQ0XYWBnVOH-gzGzoHsz',
-        //     appKey: 'LIKa0ePqFMkglQfOkN0JNK6c',
-        //     avatar: 'monsterid'
-        //   }
-        // },
+        {
+            choosen: 'valine',
+            options: {
+                el: '#valine-vuepress-comment',
+                appId: 'ia1ce4bo4ylldAh5nu5mBrWK-gzGzoHsz',
+                appKey: 'HitMdyOztP03Oy8zRl9hzJcj',
+                avatar: 'monsterid'
+            }
+        },
         {
             choosen: 'gitalk',
             options: {
@@ -117,7 +117,7 @@ module.exports = [ // 插件
                     cover: 'https://y.gtimg.cn/music/photo_new/T001R300x300M000002uNtOf2Xj5eB.jpg?max_age=2592000'
                 },
             ],
-            autoShrink:true
+            autoShrink: true
         },
     ],
 ]
