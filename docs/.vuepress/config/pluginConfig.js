@@ -105,6 +105,12 @@ module.exports = [ // 插件
         {
             audios: [
                 {
+                    name: ' My Soul',
+                    artist: 'July / 줄라이',
+                    url: 'https://cdn.jsdelivr.net/gh/loveagri/cdn/my-soul.mp3',
+                    cover: 'https://y.gtimg.cn/music/photo_new/T001R300x300M000002wBPxX3IGivF.jpg?max_age=2592000'
+                },
+                {
                     name: ' My Love',
                     artist: 'Westlife',
                     url: 'https://cdn.jsdelivr.net/gh/loveagri/cdn/Westlife-My%20Love.mp3',
