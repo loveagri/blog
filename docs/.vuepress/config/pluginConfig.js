@@ -108,7 +108,7 @@ module.exports = [ // 插件
                     name: ' My Soul',
                     artist: 'July / 줄라이',
                     url: 'https://cdn.jsdelivr.net/gh/loveagri/cdn/my-soul.mp3',
-                    cover: 'https://cdn.jsdelivr.net/gh/loveagri/cdn/image/july.png'
+                    cover: 'https://cdn.jsdelivr.net/gh/loveagri/cdn/image/july.jpg'
                 },
                 {
                     name: ' My Love',
