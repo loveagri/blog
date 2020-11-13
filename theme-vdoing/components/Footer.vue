@@ -14,15 +14,13 @@
       ></a>
     </div>
 
-    <!--Vdoing主题遵循MIT协议，完全开源且免费。如果您对主题的修改并不大，希望您保留主题的链接。-->
-    Theme by
+      工信部备案信息：
     <a
-      href="https://github.com/loveagri/vuepress-theme-vdoing"
+      href="http://www.beian.miit.gov.cn/"
       target="_blank"
-      title="本站主题"
-    >Vdoing</a>
+      title="beian"
+    >冀ICP备19024518号-1</a>
     <template v-if="footer">
-      | Copyright © {{ footer.createYear }}-{{ new Date().getFullYear() }}
       <span
         v-html="footer.copyrightInfo"
       ></span>
