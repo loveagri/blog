@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7e1cdcae","path":"/tools/git/git-setting.html","title":"git设置","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"git bash 页面中文显示为数字,不是乱码,解决方法:","slug":"git-bash-页面中文显示为数字-不是乱码-解决方法","link":"#git-bash-页面中文显示为数字-不是乱码-解决方法","children":[]}],"git":{},"filePathRelative":"tools/git/git-setting.md"}');export{t as data};

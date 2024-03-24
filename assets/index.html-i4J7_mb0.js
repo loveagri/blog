@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-39c86956","path":"/language/PHP/Lnmp/","title":"Lnmp","lang":"en-US","frontmatter":{"barName":"Lnmp"},"headers":[],"git":{},"filePathRelative":"language/PHP/Lnmp/README.md"}');export{a as data};

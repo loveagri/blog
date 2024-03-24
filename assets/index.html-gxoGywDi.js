@@ -1,0 +1,1 @@
+import{_ as a,o as c,c as o,a as e}from"./app-lZ8g2une.js";const n={},t=e("h1",{id:"laradock",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#laradock"},[e("span",null,"Laradock")])],-1),r=[t];function s(_,d){return c(),o("div",null,r)}const i=a(n,[["render",s],["__file","index.html.vue"]]);export{i as default};

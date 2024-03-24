@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0c56f11a","path":"/Linux/shell/tools-command.html","title":"工具命令","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"find","slug":"find","link":"#find","children":[]}],"git":{},"filePathRelative":"Linux/shell/tools-command.md"}');export{e as data};

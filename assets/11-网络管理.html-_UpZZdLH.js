@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-43a74bd2","path":"/network/11-%E7%BD%91%E7%BB%9C%E7%AE%A1%E7%90%86.html","title":"第 11 章 网络管理","lang":"en-US","frontmatter":{"order":89},"headers":[],"git":{},"filePathRelative":"network/11-网络管理.md"}');export{t as data};

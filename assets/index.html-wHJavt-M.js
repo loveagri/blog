@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-2b8b28b0","path":"/Linux/kali/","title":"kali","lang":"en-US","frontmatter":{"barName":"kali"},"headers":[],"git":{},"filePathRelative":"Linux/kali/README.md"}');export{a as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-75270f13","path":"/Linux/commands/","title":"Linux 命令","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"Linux/commands/README.md"}');export{t as data};

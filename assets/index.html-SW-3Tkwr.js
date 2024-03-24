@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-34869ede","path":"/tools/phpstorm/","title":"PHPstorm","lang":"en-US","frontmatter":{"barName":"IDEA"},"headers":[{"level":2,"title":"laravel","slug":"laravel","link":"#laravel","children":[{"level":3,"title":"computer","slug":"computer","link":"#computer","children":[]}]}],"git":{},"filePathRelative":"tools/phpstorm/README.md"}');export{e as data};

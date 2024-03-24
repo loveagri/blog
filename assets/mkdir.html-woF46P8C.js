@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2942a146","path":"/Linux/commands/mkdir.html","title":"mkdir","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"批量创建目录","slug":"批量创建目录","link":"#批量创建目录","children":[]}],"git":{},"filePathRelative":"Linux/commands/mkdir.md"}');export{e as data};

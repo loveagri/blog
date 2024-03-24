@@ -1,0 +1,1 @@
+import{_,o as t,c as a,a as e}from"./app-lZ8g2une.js";const c={},s=e("h1",{id:"第-11-章-网络管理",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#第-11-章-网络管理"},[e("span",null,"第 11 章 网络管理")])],-1),n=[s];function o(r,l){return t(),a("div",null,n)}const h=_(c,[["render",o],["__file","11-网络管理.html.vue"]]);export{h as default};

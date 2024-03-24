@@ -1,0 +1,1 @@
+import{_,o as t,c as a,a as e}from"./app-lZ8g2une.js";const c={},s=e("h1",{id:"第-7-章-下一代互联网",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#第-7-章-下一代互联网"},[e("span",null,"第 7 章 下一代互联网")])],-1),n=[s];function o(r,l){return t(),a("div",null,n)}const h=_(c,[["render",o],["__file","7-下一代互联网.html.vue"]]);export{h as default};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-9f941e00","path":"/network/7-%E4%B8%8B%E4%B8%80%E4%BB%A3%E4%BA%92%E8%81%94%E7%BD%91.html","title":"第 7 章 下一代互联网","lang":"en-US","frontmatter":{"order":93},"headers":[],"git":{},"filePathRelative":"network/7-下一代互联网.md"}');export{e as data};

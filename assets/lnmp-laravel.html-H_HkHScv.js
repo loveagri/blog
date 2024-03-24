@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-59b7e133","path":"/language/PHP/Lnmp/lnmp-laravel.html","title":"Lnmp之安装laravel应用","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"language/PHP/Lnmp/lnmp-laravel.md"}');export{a as data};

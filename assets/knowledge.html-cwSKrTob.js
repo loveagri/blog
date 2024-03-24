@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-dc2fdba2","path":"/Linux/knowledge.html","title":"小知识点","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"Linux/knowledge.md"}');export{e as data};

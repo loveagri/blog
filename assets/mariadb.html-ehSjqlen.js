@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-885c5bc0","path":"/database/mariadb.html","title":"mariadb 安装","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"database/mariadb.md"}');export{a as data};

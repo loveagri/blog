@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-35c1e96a","path":"/Linux/kali/air-crack.html","title":"air-crack","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"Linux/kali/air-crack.md"}');export{a as data};

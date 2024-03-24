@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-ea6527ba","path":"/tools/FTP/setting.html","title":"FTP setting","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"添加用户，并授权文件夹权限","slug":"添加用户-并授权文件夹权限","link":"#添加用户-并授权文件夹权限","children":[]}],"git":{},"filePathRelative":"tools/FTP/setting.md"}');export{t as data};

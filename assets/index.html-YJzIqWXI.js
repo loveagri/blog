@@ -1,0 +1,1 @@
+import{_ as a,o as n,c as t,a as e}from"./app-lZ8g2une.js";const c={},r=e("h1",{id:"laravel",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#laravel"},[e("span",null,"Laravel")])],-1),s=[r];function l(o,_){return n(),t("div",null,s)}const i=a(c,[["render",l],["__file","index.html.vue"]]);export{i as default};

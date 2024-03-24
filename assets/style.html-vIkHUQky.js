@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0286cb22","path":"/language/vue/style.html","title":"样式相关问题","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"language/vue/style.md"}');export{e as data};

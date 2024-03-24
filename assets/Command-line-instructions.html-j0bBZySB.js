@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-2ede5227","path":"/tools/git/Command-line-instructions.html","title":"Command line instructions","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tools/git/Command-line-instructions.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6b60dd00","path":"/tools/Brew/","title":"Brew","lang":"en-US","frontmatter":{"barName":"Brew"},"headers":[],"git":{},"filePathRelative":"tools/Brew/README.md"}');export{e as data};

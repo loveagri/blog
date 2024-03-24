@@ -1,0 +1,1 @@
+import{_ as n,o as t,c as a,a as e}from"./app-lZ8g2une.js";const c={},s=e("h1",{id:"lnmp",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#lnmp"},[e("span",null,"Lnmp")])],-1),o=[s];function _(r,l){return t(),a("div",null,o)}const i=n(c,[["render",_],["__file","index.html.vue"]]);export{i as default};

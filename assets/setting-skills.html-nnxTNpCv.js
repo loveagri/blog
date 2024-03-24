@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-f66704ae","path":"/tools/phpstorm/setting-skills.html","title":"设置技巧","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"phpstorm 自动在头部 use 命名空间","slug":"phpstorm-自动在头部-use-命名空间","link":"#phpstorm-自动在头部-use-命名空间","children":[]}],"git":{},"filePathRelative":"tools/phpstorm/setting-skills.md"}');export{t as data};

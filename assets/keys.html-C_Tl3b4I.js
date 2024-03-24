@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-655c0df4","path":"/tools/phpstorm/keys.html","title":"热键","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tools/phpstorm/keys.md"}');export{t as data};

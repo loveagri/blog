@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-4531a5c3","path":"/computer/Mac/proxy-setting.html","title":"代理开始关闭命令设置","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"computer/Mac/proxy-setting.md"}');export{t as data};

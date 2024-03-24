@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-bb300be0","path":"/Linux/shell/grep.html","title":"grep和egrep","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"参数","slug":"参数","link":"#参数","children":[]}],"git":{},"filePathRelative":"Linux/shell/grep.md"}');export{e as data};

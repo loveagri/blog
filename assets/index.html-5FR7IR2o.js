@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as t,a as e}from"./app-lZ8g2une.js";const a={},c=e("h1",{id:"shell",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#shell"},[e("span",null,"shell")])],-1),l=[c];function o(_,r){return n(),t("div",null,l)}const h=s(a,[["render",o],["__file","index.html.vue"]]);export{h as default};

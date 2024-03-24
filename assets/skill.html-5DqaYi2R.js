@@ -1,0 +1,1 @@
+import{_ as s,o as t,c as a,a as e}from"./app-lZ8g2une.js";const c={},n=e("h1",{id:"技巧",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#技巧"},[e("span",null,"技巧")])],-1),o=[n];function l(_,r){return t(),a("div",null,o)}const d=s(c,[["render",l],["__file","skill.html.vue"]]);export{d as default};

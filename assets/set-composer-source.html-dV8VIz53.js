@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-482b35d1","path":"/language/PHP/set-composer-source.html","title":"composer更换、恢复源相关命令","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"language/PHP/set-composer-source.md"}');export{e as data};

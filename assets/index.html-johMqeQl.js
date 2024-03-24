@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-b3fa260a","path":"/computer/Mac/","title":"Mac","lang":"en-US","frontmatter":{"barName":"Mac"},"headers":[],"git":{},"filePathRelative":"computer/Mac/README.md"}');export{a as data};

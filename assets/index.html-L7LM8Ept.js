@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-247c42cc","path":"/tools/FTP/","title":"FTP","lang":"en-US","frontmatter":{"barName":"FTP"},"headers":[],"git":{},"filePathRelative":"tools/FTP/README.md"}');export{t as data};

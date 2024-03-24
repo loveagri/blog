@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-d440f426","path":"/tools/","title":"工具","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"有用网站","slug":"有用网站","link":"#有用网站","children":[]},{"level":2,"title":"镜像加速器","slug":"镜像加速器","link":"#镜像加速器","children":[]}],"git":{},"filePathRelative":"tools/README.md"}');export{e as data};

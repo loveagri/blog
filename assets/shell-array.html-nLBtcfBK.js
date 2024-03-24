@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-fc7f0220","path":"/Linux/shell/shell-array.html","title":"shell中数组的用法","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"Linux/shell/shell-array.md"}');export{e as data};

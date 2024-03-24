@@ -1,0 +1,1 @@
+import{_ as t,o as a,c,a as e}from"./app-lZ8g2une.js";const s={},n=e("h1",{id:"正则表达式",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#正则表达式"},[e("span",null,"正则表达式")])],-1),o=[n];function r(_,l){return a(),c("div",null,o)}const h=t(s,[["render",r],["__file","regexp.html.vue"]]);export{h as default};

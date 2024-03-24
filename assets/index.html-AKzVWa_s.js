@@ -1,0 +1,1 @@
+import{_ as n,o as t,c as a,a as e}from"./app-lZ8g2une.js";const c={},s=e("h1",{id:"编程开发",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#编程开发"},[e("span",null,"编程开发")])],-1),o=[s];function _(r,d){return t(),a("div",null,o)}const i=n(c,[["render",_],["__file","index.html.vue"]]);export{i as default};

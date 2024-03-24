@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-7f28650b","path":"/tools/Laradock/","title":"Laradock","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tools/Laradock/README.md"}');export{a as data};

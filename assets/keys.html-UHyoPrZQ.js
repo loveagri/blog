@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-30f53ca6","path":"/tools/VScode/keys.html","title":"VScode热键","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tools/VScode/keys.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-1adca497","path":"/network/12-%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E4%B8%8E%E8%AE%BE%E8%AE%A1.html","title":"第 12 章 网络规划与设计","lang":"en-US","frontmatter":{"order":88},"headers":[],"git":{},"filePathRelative":"network/12-网络规划与设计.md"}');export{t as data};

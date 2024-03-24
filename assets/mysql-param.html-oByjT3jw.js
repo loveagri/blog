@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-1a8667b2","path":"/database/mysql-param.html","title":"MySQL参数","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"database/mysql-param.md"}');export{a as data};

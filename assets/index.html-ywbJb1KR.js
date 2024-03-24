@@ -1,0 +1,1 @@
+import{_ as c,o,c as n,a as e}from"./app-lZ8g2une.js";const t={},a=e("h1",{id:"docker",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#docker"},[e("span",null,"Docker")])],-1),r=[a];function s(_,d){return o(),n("div",null,r)}const i=c(t,[["render",s],["__file","index.html.vue"]]);export{i as default};

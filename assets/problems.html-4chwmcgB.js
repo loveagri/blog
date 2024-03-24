@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-1b124c0c","path":"/language/PHP/Laravel/problems.html","title":"laravel常见问题","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"language/PHP/Laravel/problems.md"}');export{a as data};

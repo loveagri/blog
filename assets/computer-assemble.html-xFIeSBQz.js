@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3db47e70","path":"/computer/computer-assemble.html","title":"计算机组装","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"computer/computer-assemble.md"}');export{e as data};

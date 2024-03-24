@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7016649e","path":"/Linux/shell/var-replace.html","title":"变量替换和测试","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"变量替换","slug":"变量替换","link":"#变量替换","children":[]},{"level":3,"title":"变量测试","slug":"变量测试","link":"#变量测试","children":[]}],"git":{},"filePathRelative":"Linux/shell/var-replace.md"}');export{e as data};

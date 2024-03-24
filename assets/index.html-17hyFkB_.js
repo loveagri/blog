@@ -1,0 +1,1 @@
+import{_ as a,o as n,c as t,a as e}from"./app-lZ8g2une.js";const c={},s=e("h1",{id:"kali",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#kali"},[e("span",null,"kali")])],-1),o=[s];function _(l,r){return n(),t("div",null,o)}const d=a(c,[["render",_],["__file","index.html.vue"]]);export{d as default};

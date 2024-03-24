@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-39287328","path":"/language/Javascript/regexp.html","title":"正则表达式","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"language/Javascript/regexp.md"}');export{a as data};
