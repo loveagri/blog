@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.BrJYEL96.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Linux/cron.md","filePath":"Linux/cron.md","lastUpdated":1737450307000}'),n={name:"Linux/cron.md"};function r(o,c,s,i,d,p){return a(),t("div")}const f=e(n,[["render",r]]);export{m as __pageData,f as default};
