@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DHCP | 静思田园</title>
+    <meta name="description" content="时不时记录一点点">
+    <meta name="generator" content="VitePress v1.6.4">
+    <link rel="preload stylesheet" href="/assets/style.BR1LAxUO.css" as="style">
+    <link rel="preload stylesheet" href="/vp-icons.css" as="style">
+    <script type="module" src="/assets/chunks/metadata.05ea87e7.js"></script>
+    <script type="module" src="/assets/app.DkqEekfc.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/framework.BrJYEL96.js">
+    <link rel="modulepreload" href="/assets/chunks/theme.Dxh1NrUw.js">
+    <link rel="modulepreload" href="/assets/chunks/katex.ChWnQ-fc.js">
+    <link rel="modulepreload" href="/assets/chunks/c4Diagram-3d4e48cf.h8ob9WRN.js">
+    <link rel="modulepreload" href="/assets/chunks/flowDiagram-66a62f08.CRDJ0L2a.js">
+    <link rel="modulepreload" href="/assets/chunks/flowDiagram-v2-96b9c2cf.iR8fFuXs.js">
+    <link rel="modulepreload" href="/assets/chunks/erDiagram-9861fffd.BhRa6Izg.js">
+    <link rel="modulepreload" href="/assets/chunks/gitGraphDiagram-72cf32ee.DZIBzDhi.js">
+    <link rel="modulepreload" href="/assets/chunks/ganttDiagram-c361ad54.CirbifLf.js">
+    <link rel="modulepreload" href="/assets/chunks/infoDiagram-f8f76790.BIfpxml1.js">
+    <link rel="modulepreload" href="/assets/chunks/pieDiagram-8a3498a8.BK2yvgRa.js">
+    <link rel="modulepreload" href="/assets/chunks/quadrantDiagram-120e2f19.DKCtS_Fa.js">
+    <link rel="modulepreload" href="/assets/chunks/xychartDiagram-e933f94c.5rAy9KRe.js">
+    <link rel="modulepreload" href="/assets/chunks/requirementDiagram-deff3bca.DXK9uNqK.js">
+    <link rel="modulepreload" href="/assets/chunks/sequenceDiagram-704730f1.BJIZdcZ6.js">
+    <link rel="modulepreload" href="/assets/chunks/classDiagram-70f12bd4.BBiVPp2d.js">
+    <link rel="modulepreload" href="/assets/chunks/classDiagram-v2-f2320105.DfIzUqkc.js">
+    <link rel="modulepreload" href="/assets/chunks/stateDiagram-587899a1.BYlqk5jL.js">
+    <link rel="modulepreload" href="/assets/chunks/stateDiagram-v2-d93cdb3a.BNMwGvFH.js">
+    <link rel="modulepreload" href="/assets/chunks/journeyDiagram-49397b02.3DGt_l_e.js">
+    <link rel="modulepreload" href="/assets/chunks/flowchart-elk-definition-4a651766.CPyErXEu.js">
+    <link rel="modulepreload" href="/assets/chunks/timeline-definition-85554ec2.B6CuVCQi.js">
+    <link rel="modulepreload" href="/assets/chunks/mindmap-definition-fc14e90a.CPANXenq.js">
+    <link rel="modulepreload" href="/assets/chunks/sankeyDiagram-04a897e0.eTZDfgIa.js">
+    <link rel="modulepreload" href="/assets/chunks/blockDiagram-38ab4fdb.BsKDhyyD.js">
+    <link rel="modulepreload" href="/assets/chunks/virtual_mermaid-config.DDnGl6nM.js">
+    <link rel="modulepreload" href="/assets/courses_Internet_dhcp.md.CDrdi27T.lean.js">
+    <meta name="application-name" content="VuePress">
+    <meta name="apple-mobile-web-app-title" content="静思田园">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#3eaf7c">
+    <meta name="theme-color" content="#646cff">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-07815e80><!--[--><!--]--><!--[--><span tabindex="-1" data-v-f0f4db54></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-f0f4db54>Skip to content</a><!--]--><!----><header class="VPNav" data-v-07815e80 data-v-ab623399><div class="VPNavBar" data-v-ab623399 data-v-69bdbf19><div class="wrapper" data-v-69bdbf19><div class="container" data-v-69bdbf19><div class="title" data-v-69bdbf19><div class="VPNavBarTitle has-sidebar" data-v-69bdbf19 data-v-7a180ca7><a class="title" href="/" data-v-7a180ca7><!--[--><!--]--><!--[--><img class="VPImage logo" src="/logo.png" alt data-v-ce530396><!--]--><span data-v-7a180ca7>静思田园</span><!--[--><!--]--></a></div></div><div class="content" data-v-69bdbf19><div class="content-body" data-v-69bdbf19><!--[--><!--]--><div class="VPNavBarSearch search" data-v-69bdbf19><!--[--><!----><div id="local-search"><button type="button" class="DocSearch DocSearch-Button" aria-label="搜索文档"><span class="DocSearch-Button-Container"><span class="vp-icon DocSearch-Search-Icon"></span><span class="DocSearch-Button-Placeholder">搜索文档</span></span><span class="DocSearch-Button-Keys"><kbd class="DocSearch-Button-Key"></kbd><kbd class="DocSearch-Button-Key">K</kbd></span></button></div><!--]--></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-69bdbf19 data-v-27c38a29><span id="main-nav-aria-label" class="visually-hidden" data-v-27c38a29> Main Navigation </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542></span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/network/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>网络工程师</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/frontend/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>前端</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/English/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>English</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/Scrapy/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>爬虫</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/anaconda/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>anaconda</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/backend/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>后端</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/bigdata/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>大数据</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/computer/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>计算机</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/courses/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>教学</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/database/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>数据库</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/docker/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>dorker</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/ds-al/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>数据结构与算法</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/operation/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>运维</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/tools/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>工具</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/typescript/" tabindex="0" data-v-27c38a29 data-v-929b5542><!--[--><span data-v-929b5542>typescrpt</span><!--]--></a><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-69bdbf19 data-v-fcd9ca3a><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-fcd9ca3a data-v-ba544291 data-v-dd161a53><span class="check" data-v-dd161a53><span class="icon" data-v-dd161a53><!--[--><span class="vpi-sun sun" data-v-ba544291></span><span class="vpi-moon moon" data-v-ba544291></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-69bdbf19 data-v-79379b30 data-v-79d69c18><!--[--><a class="VPSocialLink no-icon" href="https://github.com/loveagri" aria-label="github" target="_blank" rel="noopener" data-v-79d69c18 data-v-2931b4de><span class="vpi-social-github"></span></a><a class="VPSocialLink no-icon" href="https://gitee.com/loveagri" aria-label="gitee" target="_blank" rel="noopener" data-v-79d69c18 data-v-2931b4de><span class="vpi-social-gitee"></span></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-69bdbf19 data-v-e91c9d52 data-v-9f56f881><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-9f56f881><span class="vpi-more-horizontal icon" data-v-9f56f881></span></button><div class="menu" data-v-9f56f881><div class="VPMenu" data-v-9f56f881 data-v-bfe16d53><!----><!--[--><!--[--><!----><div class="group" data-v-e91c9d52><div class="item appearance" data-v-e91c9d52><p class="label" data-v-e91c9d52>Appearance</p><div class="appearance-action" data-v-e91c9d52><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-e91c9d52 data-v-ba544291 data-v-dd161a53><span class="check" data-v-dd161a53><span class="icon" data-v-dd161a53><!--[--><span class="vpi-sun sun" data-v-ba544291></span><span class="vpi-moon moon" data-v-ba544291></span><!--]--></span></span></button></div></div></div><div class="group" data-v-e91c9d52><div class="item social-links" data-v-e91c9d52><div class="VPSocialLinks social-links-list" data-v-e91c9d52 data-v-79d69c18><!--[--><a class="VPSocialLink no-icon" href="https://github.com/loveagri" aria-label="github" target="_blank" rel="noopener" data-v-79d69c18 data-v-2931b4de><span class="vpi-social-github"></span></a><a class="VPSocialLink no-icon" href="https://gitee.com/loveagri" aria-label="gitee" target="_blank" rel="noopener" data-v-79d69c18 data-v-2931b4de><span class="vpi-social-gitee"></span></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-69bdbf19 data-v-c49f5dbf><span class="container" data-v-c49f5dbf><span class="top" data-v-c49f5dbf></span><span class="middle" data-v-c49f5dbf></span><span class="bottom" data-v-c49f5dbf></span></span></button></div></div></div></div><div class="divider" data-v-69bdbf19><div class="divider-line" data-v-69bdbf19></div></div></div><!----></header><div class="VPLocalNav has-sidebar empty" data-v-07815e80 data-v-e553da54><div class="container" data-v-e553da54><button class="menu" aria-expanded="false" aria-controls="VPSidebarNav" data-v-e553da54><span class="vpi-align-left menu-icon" data-v-e553da54></span><span class="menu-text" data-v-e553da54>Menu</span></button><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-e553da54 data-v-8cb024f0><button data-v-8cb024f0>Return to top</button><!----></div></div></div><aside class="VPSidebar" data-v-07815e80 data-v-1e878482><div class="curtain" data-v-1e878482></div><nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1" data-v-1e878482><span class="visually-hidden" id="sidebar-aria-label" data-v-1e878482> Sidebar Navigation </span><!--[--><!--]--><!--[--><div class="no-transition group" data-v-a3db70b2><section class="VPSidebarItem level-0 has-active" data-v-a3db70b2 data-v-2e37ae58><div class="item" role="button" tabindex="0" data-v-2e37ae58><div class="indicator" data-v-2e37ae58></div><h2 class="text" data-v-2e37ae58>Internet</h2><!----></div><div class="items" data-v-2e37ae58><!--[--><div class="VPSidebarItem level-1 is-link" data-v-2e37ae58 data-v-2e37ae58><div class="item" data-v-2e37ae58><div class="indicator" data-v-2e37ae58></div><a class="VPLink link link" href="/courses/Internet/dhcp.html" data-v-2e37ae58><!--[--><p class="text" data-v-2e37ae58>DHCP</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><!--]--><!--[--><!--]--></nav></aside><div class="VPContent has-sidebar" id="VPContent" data-v-07815e80 data-v-b8aa3e4a><div class="VPDoc has-sidebar has-aside" data-v-b8aa3e4a data-v-2b63b579><!--[--><!--]--><div class="container" data-v-2b63b579><div class="aside" data-v-2b63b579><div class="aside-curtain" data-v-2b63b579></div><div class="aside-container" data-v-2b63b579><div class="aside-content" data-v-2b63b579><div class="VPDocAside" data-v-2b63b579 data-v-2a2061d5><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-2a2061d5 data-v-5b187480><div class="content" data-v-5b187480><div class="outline-marker" data-v-5b187480></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-5b187480>目录</div><ul class="VPDocOutlineItem root" data-v-5b187480 data-v-2b3fa3cc><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-2a2061d5></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-2b63b579><div class="content-container" data-v-2b63b579><!--[--><!--]--><main class="main" data-v-2b63b579><div style="position:relative;" class="vp-doc _courses_Internet_dhcp" data-v-2b63b579><div><h1 id="dhcp" tabindex="-1">DHCP <a class="header-anchor" href="#dhcp" aria-label="Permalink to &quot;DHCP&quot;">​</a></h1><p><img src="https://raw.gitcode.com/loveagri/pic/raw/main/2026-04-20/22/19422_image-20260420214216815.png" alt="image-20260420214216815" loading="lazy"></p><h2 id="一、网络规划-必看" tabindex="-1">一、网络规划（必看） <a class="header-anchor" href="#一、网络规划-必看" aria-label="Permalink to &quot;一、网络规划（必看）&quot;">​</a></h2><table tabindex="0"><thead><tr><th>设备</th><th>接口</th><th>IP 地址 / 配置</th><th>作用</th></tr></thead><tbody><tr><td><strong>R1</strong></td><td>Vlanif10</td><td>192.168.1.1/24</td><td>销售部网关（DHCP 服务器）</td></tr><tr><td><strong>R1</strong></td><td>Vlanif20</td><td>192.168.2.1/24</td><td>市场部网关（DHCP 服务器）</td></tr><tr><td><strong>R1</strong></td><td>GE0/0/1</td><td>10.2.2.1/24</td><td>与 R2 互联</td></tr><tr><td><strong>R2</strong></td><td>GE0/0/0</td><td>10.2.2.2/24</td><td>与 R1 互联</td></tr><tr><td><strong>R2</strong></td><td>Ethernet0/0/1</td><td>172.16.5.1/24</td><td>研发部网关（DHCP 中继）</td></tr><tr><td><strong>LSW1</strong></td><td>接 PC1/2</td><td>Access → Vlan10</td><td>销售部接入</td></tr><tr><td><strong>LSW1</strong></td><td>接 PC3/4</td><td>Access → Vlan20</td><td>市场部接入</td></tr><tr><td><strong>LSW1</strong></td><td>接 R1</td><td>Trunk → 允 Vlan10/20</td><td>上联路由</td></tr></tbody></table><h2 id="二、lsw1-接入交换机配置" tabindex="-1">二、LSW1 接入交换机配置 <a class="header-anchor" href="#二、lsw1-接入交换机配置" aria-label="Permalink to &quot;二、LSW1 接入交换机配置&quot;">​</a></h2><div class="language-shell line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">shell</span><pre class="shiki one-dark-pro vp-code" style="background-color:#282c34;color:#abb2bf;" tabindex="0"><code><span class="line"><span style="color:#ABB2BF;">&lt;Huawei&gt; system-view</span></span>
+<span class="line"><span style="color:#ABB2BF;">[Huawei] undo info-center enable</span></span>
+<span class="line"><span style="color:#ABB2BF;">[Huawei] sysname LSW1</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 1. 创建VLAN</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1] vlan batch 10 20</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 2. 配置销售部接口（PC1、PC2）</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1] interface Ethernet 0/0/1</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-Ethernet0/0/1] port link-type access</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-Ethernet0/0/1] port default vlan 10</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-Ethernet0/0/1] quit</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1] interface Ethernet 0/0/2</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-Ethernet0/0/2] port link-type access</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-Ethernet0/0/2] port default vlan 10</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-Ethernet0/0/2] quit</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 3. 配置市场部接口（PC3、PC4）</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1] interface Ethernet 0/0/3</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-Ethernet0/0/3] port link-type access</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-Ethernet0/0/3] port default vlan 20</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-Ethernet0/0/3] quit</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1] interface Ethernet 0/0/4</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-Ethernet0/0/4] port link-type access</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-Ethernet0/0/4] port default vlan 20</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-Ethernet0/0/4] quit</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 4. 配置连接R1的上联口（必须是Trunk）</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1] interface GigabitEthernet 0/0/1</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-GigabitEthernet0/0/1] port link-type trunk</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-GigabitEthernet0/0/1] port trunk allow-pass vlan 10 20</span></span>
+<span class="line"><span style="color:#ABB2BF;">[LSW1-GigabitEthernet0/0/1] quit</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><hr><h2 id="三、r1-路由器配置-dhcp-服务器核心" tabindex="-1">三、R1 路由器配置（DHCP 服务器核心） <a class="header-anchor" href="#三、r1-路由器配置-dhcp-服务器核心" aria-label="Permalink to &quot;三、R1 路由器配置（DHCP 服务器核心）&quot;">​</a></h2><div class="language-shell line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">shell</span><pre class="shiki one-dark-pro vp-code" style="background-color:#282c34;color:#abb2bf;" tabindex="0"><code><span class="line"><span style="color:#ABB2BF;">&lt;Huawei&gt; system-view</span></span>
+<span class="line"><span style="color:#ABB2BF;">[Huawei] undo info-center enable</span></span>
+<span class="line"><span style="color:#ABB2BF;">[Huawei] sysname R1</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 1. 全局开启DHCP</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1] dhcp enable</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 2. 创建VLAN并配置三层网关</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1] vlan batch 10 20</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 3. 配置连接交换机的Trunk口</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1] interface GigabitEthernet 0/0/0</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-GigabitEthernet0/0/0] portswitch</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-GigabitEthernet0/0/0] port link-type trunk</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-GigabitEthernet0/0/0] port trunk allow-pass vlan 10 20</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-GigabitEthernet0/0/0] quit</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 4. 配置销售部Vlanif10（网关+DHCP）</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1] interface Vlanif 10</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-Vlanif10] ip address 192.168.1.1 255.255.255.0</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-Vlanif10] dhcp </span><span style="color:#C678DD;">select</span><span style="color:#E06C75;"> global</span><span style="color:#7F848E;font-style:italic;">  # 绑定全局地址池</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-Vlanif10] quit</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 5. 配置市场部Vlanif20（网关+DHCP）</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1] interface Vlanif 20</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-Vlanif20] ip address 192.168.2.1 255.255.255.0</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-Vlanif20] dhcp </span><span style="color:#C678DD;">select</span><span style="color:#E06C75;"> global</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-Vlanif20] quit</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 6. 配置与R2互联接口</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1] interface GigabitEthernet 0/0/1</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-GigabitEthernet0/0/1] ip address 10.2.2.1 255.255.255.0</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-GigabitEthernet0/0/1] dhcp </span><span style="color:#C678DD;">select</span><span style="color:#E06C75;"> global</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-GigabitEthernet0/0/1] quit</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 7. 配置DHCP全局地址池</span></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 销售部地址池</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1] ip pool Pool-Sales</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-ip-pool-Pool-Sales] network 192.168.1.0 mask 255.255.255.0</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-ip-pool-Pool-Sales] gateway-list 192.168.1.1</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-ip-pool-Pool-Sales] dns-list 8.8.8.8 114.114.114.114</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-ip-pool-Pool-Sales] excluded-ip-address 192.168.1.2 192.168.1.10</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-ip-pool-Pool-Sales] excluded-ip-address 192.168.1.201 192.168.1.254</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-ip-pool-Pool-Sales] quit</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 市场部地址池</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1] ip pool Pool-Market</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-ip-pool-Pool-Market] network 192.168.2.0 mask 255.255.255.0</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-ip-pool-Pool-Market] gateway-list 192.168.2.1</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-ip-pool-Pool-Market] dns-list 8.8.8.8 114.114.114.114</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-ip-pool-Pool-Market] quit</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 研发部地址池（R2中继使用）</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1] ip pool Pool-RD</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-ip-pool-Pool-RD] network 172.16.5.0 mask 255.255.255.0</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-ip-pool-Pool-RD] gateway-list 172.16.5.1</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-ip-pool-Pool-RD] dns-list 8.8.8.8 114.114.114.114</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1-ip-pool-Pool-RD] quit</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 8. 配置静态路由（指向R2）</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R1] ip route-static 172.16.5.0 255.255.255.0 10.2.2.2</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br></div></div><hr><h2 id="四、r2-路由器配置-dhcp-中继" tabindex="-1">四、R2 路由器配置（DHCP 中继） <a class="header-anchor" href="#四、r2-路由器配置-dhcp-中继" aria-label="Permalink to &quot;四、R2 路由器配置（DHCP 中继）&quot;">​</a></h2><div class="language-shell line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">shell</span><pre class="shiki one-dark-pro vp-code" style="background-color:#282c34;color:#abb2bf;" tabindex="0"><code><span class="line"><span style="color:#ABB2BF;">&lt;Huawei&gt; system-view</span></span>
+<span class="line"><span style="color:#ABB2BF;">[Huawei] undo info-center enable</span></span>
+<span class="line"><span style="color:#ABB2BF;">[Huawei] sysname R2</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 1. 全局开启DHCP（中继必须开启）</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R2] dhcp enable</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 2. 配置与R1互联接口</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R2] interface GigabitEthernet 0/0/0</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R2-GigabitEthernet0/0/0] ip address 10.2.2.2 255.255.255.0</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R2-GigabitEthernet0/0/0] quit</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 3. 配置研发部接口（网关+中继）</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R2] interface Ethernet 0/0/1</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R2-Ethernet 0/0/1] ip address 172.16.5.1 255.255.255.0</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R2-Ethernet 0/0/1] dhcp </span><span style="color:#C678DD;">select</span><span style="color:#E06C75;"> relay</span><span style="color:#7F848E;font-style:italic;">      # 开启中继模式</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R2-Ethernet 0/0/1] dhcp relay server-ip 10.2.2.1  </span><span style="color:#7F848E;font-style:italic;"># 指定DHCP服务器IP（R1）</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R2-Ethernet 0/0/1] quit</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 4. 配置静态路由（指向R1的业务网段）</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R2] ip route-static 192.168.1.0 255.255.255.0 10.2.2.1</span></span>
+<span class="line"><span style="color:#ABB2BF;">[R2] ip route-static 192.168.2.0 255.255.255.0 10.2.2.1</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><hr><h2 id="五、pc-终端配置-自动获取" tabindex="-1">五、PC 终端配置（自动获取） <a class="header-anchor" href="#五、pc-终端配置-自动获取" aria-label="Permalink to &quot;五、PC 终端配置（自动获取）&quot;">​</a></h2><p>所有 PC 均设置为 <strong>DHCP 自动获取</strong>：</p><ol><li><p>打开 PC → 网络设置 → IPv4 → 选择 “自动获取 IP 地址” 和 “自动获取 DNS 服务器地址”。</p></li><li><p>执行命令行：</p><div class="language-shell line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">shell</span><pre class="shiki one-dark-pro vp-code" style="background-color:#282c34;color:#abb2bf;" tabindex="0"><code><span class="line"><span style="color:#61AFEF;">ipconfig</span><span style="color:#98C379;"> /release</span></span>
+<span class="line"><span style="color:#61AFEF;">ipconfig</span><span style="color:#98C379;"> /renew</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li></ol></div></div></main><footer class="VPDocFooter" data-v-2b63b579 data-v-b614ba84><!--[--><!--]--><div class="edit-info" data-v-b614ba84><!----><div class="last-updated" data-v-b614ba84><p class="VPLastUpdated" data-v-b614ba84 data-v-6689748d>Updated At: <time datetime="2026-04-21T01:53:42.000Z" data-v-6689748d></time></p></div></div><!----></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><!----><!--[--><!--]--></div></div>
+    
+    
+  </body>
+</html>
