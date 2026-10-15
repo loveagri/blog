@@ -1,0 +1,31 @@
+import{_ as n,c as a,o as l,ah as e}from"./chunks/framework.BrJYEL96.js";const u=JSON.parse('{"title":"函数","description":"","frontmatter":{},"headers":[],"relativePath":"computer/Linux/shell/function.md","filePath":"computer/Linux/shell/function.md","lastUpdated":1754837914000}'),p={name:"computer/Linux/shell/function.md"};function c(o,s,r,t,i,b){return l(),a("div",null,s[0]||(s[0]=[e(`<h1 id="函数" tabindex="-1">函数 <a class="header-anchor" href="#函数" aria-label="Permalink to &quot;函数&quot;">​</a></h1><h2 id="定义函数" tabindex="-1">定义函数 <a class="header-anchor" href="#定义函数" aria-label="Permalink to &quot;定义函数&quot;">​</a></h2><div class="language-sh line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki one-dark-pro vp-code" style="background-color:#282c34;color:#abb2bf;" tabindex="0"><code><span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 推荐函数形式</span></span>
+<span class="line"><span style="color:#61AFEF;">name</span><span style="color:#ABB2BF;">()</span></span>
+<span class="line"><span style="color:#ABB2BF;">{</span></span>
+<span class="line"><span style="color:#61AFEF;">	command1</span></span>
+<span class="line"><span style="color:#61AFEF;">	command2</span></span>
+<span class="line"><span style="color:#56B6C2;">	...</span></span>
+<span class="line"><span style="color:#61AFEF;">	commandn</span></span>
+<span class="line"><span style="color:#ABB2BF;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C678DD;">function</span><span style="color:#61AFEF;"> name</span></span>
+<span class="line"><span style="color:#ABB2BF;">{</span></span>
+<span class="line"><span style="color:#61AFEF;">	command1</span></span>
+<span class="line"><span style="color:#61AFEF;">	command2</span></span>
+<span class="line"><span style="color:#56B6C2;">	...</span></span>
+<span class="line"><span style="color:#61AFEF;">	commandn</span></span>
+<span class="line"><span style="color:#ABB2BF;">}</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><div class="tip custom-block"><p class="custom-block-title">提示</p><p><code>$$</code>获取当前执行脚本的pid, 可用于过滤当前脚本进程，grep -v $$</p></div><h2 id="函数返回值" tabindex="-1">函数返回值 <a class="header-anchor" href="#函数返回值" aria-label="Permalink to &quot;函数返回值&quot;">​</a></h2><p>函数return返回值范围只能是0-255，echo可以返回任何字符串。</p><div class="language-sh line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki one-dark-pro vp-code" style="background-color:#282c34;color:#abb2bf;" tabindex="0"><code><span class="line"><span style="color:#7F848E;font-style:italic;">#!/bin/bash</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 带返回值函数格式</span></span>
+<span class="line"><span style="color:#C678DD;">function</span><span style="color:#61AFEF;"> get_users</span></span>
+<span class="line"><span style="color:#ABB2BF;">{</span></span>
+<span class="line"><span style="color:#E06C75;">    users</span><span style="color:#56B6C2;">=</span><span style="color:#98C379;">\`</span><span style="color:#61AFEF;">cat</span><span style="color:#98C379;"> /etc/passwd </span><span style="color:#ABB2BF;">|</span><span style="color:#61AFEF;"> cut</span><span style="color:#D19A66;"> -d:</span><span style="color:#D19A66;"> -f1</span><span style="color:#98C379;">\`</span></span>
+<span class="line"><span style="color:#56B6C2;">    echo</span><span style="color:#E06C75;"> $users</span></span>
+<span class="line"><span style="color:#ABB2BF;">}</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="局部变量" tabindex="-1">局部变量 <a class="header-anchor" href="#局部变量" aria-label="Permalink to &quot;局部变量&quot;">​</a></h2><p>如果一个变量不特别声明，那么它是全局变量，如果想定义为局部变量需要使用<code>local</code>。</p><h2 id="函数库" tabindex="-1">函数库 <a class="header-anchor" href="#函数库" aria-label="Permalink to &quot;函数库&quot;">​</a></h2><p>通过<code>.</code>引用外部文件。需要通过<em><strong>绝对路径</strong></em>引入，一般库文件后缀是<code>.lib</code>无需是<code>.sh</code>后缀，任意后缀都可，库文件通常没有可执行权限，第一行用如下：</p><div class="language-sh line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki one-dark-pro vp-code" style="background-color:#282c34;color:#abb2bf;" tabindex="0"><code><span class="line"><span style="color:#7F848E;font-style:italic;">#!/bin/echo</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#56B6C2;">.</span><span style="color:#98C379;"> /path/to/outside_script.lib</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C678DD;">function</span><span style="color:#61AFEF;"> name</span></span>
+<span class="line"><span style="color:#ABB2BF;">{</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#ABB2BF;">}</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div>`,12)]))}const m=n(p,[["render",c]]);export{u as __pageData,m as default};
