@@ -1,0 +1,82 @@
+import{_ as n,c as a,o as l,ah as e}from"./chunks/framework.BrJYEL96.js";const u=JSON.parse('{"title":"操作指令","description":"","frontmatter":{},"headers":[],"relativePath":"database/redis/handle.md","filePath":"database/redis/handle.md","lastUpdated":1738567689000}'),p={name:"database/redis/handle.md"};function r(o,s,c,t,i,y){return l(),a("div",null,s[0]||(s[0]=[e(`<h1 id="操作指令" tabindex="-1">操作指令 <a class="header-anchor" href="#操作指令" aria-label="Permalink to &quot;操作指令&quot;">​</a></h1><table tabindex="0"><thead><tr><th>web</th><th>des</th></tr></thead><tbody><tr><td><a href="https://www.yuque.com/jacquiejiakui/lvfpza/ehbilf" target="_blank" rel="noreferrer">原文</a></td><td></td></tr></tbody></table><h2 id="字符串-strings-类型" tabindex="-1">字符串（strings）类型 <a class="header-anchor" href="#字符串-strings-类型" aria-label="Permalink to &quot;字符串（strings）类型&quot;">​</a></h2><p>字符串最大长度为 512M</p><div class="language-sh line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki one-dark-pro vp-code" style="background-color:#282c34;color:#abb2bf;" tabindex="0"><code><span class="line"><span style="color:#56B6C2;">set</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> value:</span><span style="color:#7F848E;font-style:italic;"> #添加一条String类型数据</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#61AFEF;">get</span><span style="color:#98C379;"> key:</span><span style="color:#7F848E;font-style:italic;"> #获取一条String类型数据</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#61AFEF;">mset</span><span style="color:#98C379;"> key1</span><span style="color:#98C379;"> value1</span><span style="color:#98C379;"> key2</span><span style="color:#98C379;"> value2:</span><span style="color:#7F848E;font-style:italic;"> #添加多条String类型数据</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#61AFEF;">mget</span><span style="color:#98C379;"> key1</span><span style="color:#98C379;"> key2:#</span><span style="color:#98C379;"> 获取多条String类型数据</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#61AFEF;">incr</span><span style="color:#98C379;"> key:</span><span style="color:#7F848E;font-style:italic;"> #自增（+1）</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#61AFEF;">incrby</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> step:</span><span style="color:#7F848E;font-style:italic;"> #按照步长（step）自增</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#61AFEF;">decr</span><span style="color:#98C379;"> key:#</span><span style="color:#98C379;"> 自减（-1）</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#61AFEF;">decrby</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> step:</span><span style="color:#7F848E;font-style:italic;"> # 按照步长（step）递减</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#61AFEF;">del</span><span style="color:#98C379;"> key:</span><span style="color:#7F848E;font-style:italic;"> # 删除</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="散列-hashes" tabindex="-1">散列（hashes） <a class="header-anchor" href="#散列-hashes" aria-label="Permalink to &quot;散列（hashes）&quot;">​</a></h2><p>散列相当于Java中的HashMap，内部是无序字典。实现原理跟HashMap一致。一个哈希表有多个节点，每个节点保存一个键值对。</p><div class="language-sh line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki one-dark-pro vp-code" style="background-color:#282c34;color:#abb2bf;" tabindex="0"><code><span class="line"><span style="color:#7F848E;font-style:italic;"># 设置属性</span></span>
+<span class="line"><span style="color:#61AFEF;">hset</span><span style="color:#98C379;"> keyname</span><span style="color:#98C379;"> field1</span><span style="color:#98C379;"> value1</span><span style="color:#98C379;"> field2</span><span style="color:#98C379;"> value2</span></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 获取某个属性值</span></span>
+<span class="line"><span style="color:#61AFEF;">hget</span><span style="color:#98C379;"> keyname</span><span style="color:#98C379;"> field</span></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 获取所有属性值</span></span>
+<span class="line"><span style="color:#61AFEF;">hgetall</span><span style="color:#98C379;"> keyname</span></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 删除某个属性</span></span>
+<span class="line"><span style="color:#61AFEF;">hdel</span><span style="color:#98C379;"> keyname</span><span style="color:#98C379;"> field</span></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 获取属性个数</span></span>
+<span class="line"><span style="color:#61AFEF;">hlen</span><span style="color:#98C379;"> keyname</span></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 按照步长自增/自减某个属性（该属性必须是数字）</span></span>
+<span class="line"><span style="color:#61AFEF;">hincrby</span><span style="color:#98C379;"> keyname</span><span style="color:#98C379;"> field</span><span style="color:#98C379;"> step</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="列表-lists" tabindex="-1">列表（lists） <a class="header-anchor" href="#列表-lists" aria-label="Permalink to &quot;列表（lists）&quot;">​</a></h2><p>类型介绍</p><p>Redis中的lists相当于Java中的LinkedList，实现原理是一个双向链表（其底层是一个快速列表），即可以支持反向查找和遍历，更方便操作。插入和删除操作非常快，时间复杂度为 O(1)，但是索引定位很慢，时间复杂度为 O(n)。</p><div class="language-sh line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki one-dark-pro vp-code" style="background-color:#282c34;color:#abb2bf;" tabindex="0"><code><span class="line"><span style="color:#7F848E;font-style:italic;"># 左进</span></span>
+<span class="line"><span style="color:#61AFEF;">lpush</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> value1</span><span style="color:#98C379;"> value2</span><span style="color:#98C379;"> value3...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 左出</span></span>
+<span class="line"><span style="color:#61AFEF;">lpop</span><span style="color:#98C379;"> key</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 右进</span></span>
+<span class="line"><span style="color:#61AFEF;">rpush</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> value1</span><span style="color:#98C379;"> value2</span><span style="color:#98C379;"> value3...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 右出</span></span>
+<span class="line"><span style="color:#61AFEF;">rpop</span><span style="color:#98C379;"> key</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 从左往右读取 start和end是下标</span></span>
+<span class="line"><span style="color:#61AFEF;">lrange</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> start</span><span style="color:#98C379;"> end</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="集合-sets" tabindex="-1">集合（sets） <a class="header-anchor" href="#集合-sets" aria-label="Permalink to &quot;集合（sets）&quot;">​</a></h2><p>类似Java的HashSet</p><div class="language-sh line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki one-dark-pro vp-code" style="background-color:#282c34;color:#abb2bf;" tabindex="0"><code><span class="line"><span style="color:#7F848E;font-style:italic;"># 添加内容</span></span>
+<span class="line"><span style="color:#61AFEF;">sadd</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> value1</span><span style="color:#98C379;"> value2</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 查询key里所有值</span></span>
+<span class="line"><span style="color:#61AFEF;">smembers</span><span style="color:#98C379;"> key</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 移除key里某个value</span></span>
+<span class="line"><span style="color:#61AFEF;">serm</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> value</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 随机移除某个value</span></span>
+<span class="line"><span style="color:#61AFEF;">spop</span><span style="color:#98C379;"> key</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 返回两个set的并集</span></span>
+<span class="line"><span style="color:#61AFEF;">sunion</span><span style="color:#98C379;"> key1</span><span style="color:#98C379;"> key2</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 返回两个set的并差集</span></span>
+<span class="line"><span style="color:#61AFEF;">sdiff</span><span style="color:#98C379;"> key1</span><span style="color:#98C379;"> key2</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 返回两个set的交集</span></span>
+<span class="line"><span style="color:#61AFEF;">sinter</span><span style="color:#98C379;"> key1</span><span style="color:#98C379;"> key2</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="有序集合-sorted-sets" tabindex="-1">有序集合（sorted sets） <a class="header-anchor" href="#有序集合-sorted-sets" aria-label="Permalink to &quot;有序集合（sorted sets）&quot;">​</a></h2><p>类型介绍</p><p>sorted sets是Redis类似于 SortedSet 和 HashMap 的结合体，一方面它是一个 set，保证了内部 value 的唯一性，另一方面它可以给每个 value 赋予一个 score，代表这个 value 的排序权重。内部使用HashMap和跳跃表(SkipList)来保证数据的存储和有序，HashMap里放的是成员到score的映射，而跳跃表里存放的是所有的成员，排序依据是HashMap里存的score,使用跳跃表的结构可以获得比较高的查找效率，并且在实现上比较简单。sorted sets中最后一个 value 被移除后，数据结构自动删除，内存被回收。</p><div class="language-sh line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki one-dark-pro vp-code" style="background-color:#282c34;color:#abb2bf;" tabindex="0"><code><span class="line"><span style="color:#7F848E;font-style:italic;"># 添加元素</span></span>
+<span class="line"><span style="color:#61AFEF;">zadd</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> score</span><span style="color:#98C379;"> value</span><span style="color:#ABB2BF;"> [score </span><span style="color:#98C379;">value...]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 获取集合的值并按照score从小到大排列， 最小的是最上面</span></span>
+<span class="line"><span style="color:#61AFEF;">zrange</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> start</span><span style="color:#98C379;"> end</span><span style="color:#ABB2BF;"> </span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 返回有序集 key 中，所有 score 值介于 min 和 max 之间(包括等于 min 或 max )的成员。有序集成员按 score 值递增(从小到大)次序排列, 最小的是最上面</span></span>
+<span class="line"><span style="color:#61AFEF;">zrangeByScore</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> score_min</span><span style="color:#98C379;"> score_max</span><span style="color:#ABB2BF;"> </span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 删除</span></span>
+<span class="line"><span style="color:#61AFEF;">zrem</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> value</span><span style="color:#ABB2BF;"> </span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 获取key的集合有多少元素</span></span>
+<span class="line"><span style="color:#61AFEF;">zcard</span><span style="color:#98C379;"> key</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 统计分数从小到大有多少元素 （闭区间）</span></span>
+<span class="line"><span style="color:#61AFEF;">zcount</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> score_min</span><span style="color:#98C379;"> score_max</span><span style="color:#ABB2BF;"> </span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 获取value所在位置（从小到大排序，最小的是0）</span></span>
+<span class="line"><span style="color:#61AFEF;">zrank</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> value</span><span style="color:#ABB2BF;"> </span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7F848E;font-style:italic;"># 获取value所在的位置（从大到小排列， 最大的是0）</span></span>
+<span class="line"><span style="color:#61AFEF;">zrevrank</span><span style="color:#98C379;"> key</span><span style="color:#98C379;"> value</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div>`,19)]))}const d=n(p,[["render",r]]);export{u as __pageData,d as default};
